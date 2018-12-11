@@ -27,8 +27,6 @@ if ( ! function_exists( 'beatech_setup' ) ) :
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
-        add_image_size('hero-pg', 1200, 300, true);
-
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
@@ -46,7 +44,7 @@ if ( ! function_exists( 'beatech_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-header' => esc_html__( 'Menu Header', 'beatech' ),
+			'menu-1' => esc_html__( 'Primary', 'beatech' ),
 		) );
 
 		/*
@@ -122,16 +120,9 @@ add_action( 'widgets_init', 'beatech_widgets_init' );
  * Enqueue scripts and styles.
  */
 function beatech_scripts() {
-	/** Estilos */
-	wp_enqueue_style( 'bootstrap4-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.1.3');
-	wp_enqueue_style( 'fontawesome-css', get_template_directory_uri() . '/assets/css/all.min.css', array(), '5.0.0');
-    wp_enqueue_style( 'beatech-style', get_stylesheet_uri() );
-
+	wp_enqueue_style( 'beatech-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'beatech-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'popper-js', get_template_directory_uri() . '/assets/js/popper.js', array('jquery'), '20151215', true );
-	wp_enqueue_script( 'bootstrap4-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '20151215', true );
-	wp_enqueue_script( 'scripts-js', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'beatech-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -145,12 +136,6 @@ add_action( 'wp_enqueue_scripts', 'beatech_scripts' );
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
-
-
-/**
- * Implementa a classe NavWalker do Bootstrap 4
- */
-require get_template_directory() . '/inc/bootstrap-navwalker.php';
 
 /**
  * Custom template tags for this theme.

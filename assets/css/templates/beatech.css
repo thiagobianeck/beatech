@@ -1,0 +1,2364 @@
+
+
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Amaranth', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900|Raleway:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900|Josefin+Sans:300,400,600,700|Amaranth:400,700|Anton');
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.linha-topo {
+    width: 100%;
+    height: 5px;
+}
+
+.bg-hor-color9{
+    background: #1e5799;
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--seccolor1) 12%, var(--pricolor2) 25%, var(--seccolor2) 36%, var(--pricolor3) 47%, var(--seccolor3) 56%, var(--pricolor4) 68%, var(--seccolor4) 84%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--seccolor1) 12%,var(--pricolor2) 25%,var(--seccolor2) 36%,var(--pricolor3) 47%,var(--seccolor3) 56%,var(--pricolor4) 68%,var(--seccolor4) 84%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--seccolor1) 12%,var(--pricolor2) 25%,var(--seccolor2) 36%,var(--pricolor3) 47%,var(--seccolor3) 56%,var(--pricolor4) 68%,var(--seccolor4) 84%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--cincolor)',GradientType=1 );
+}
+
+/* FONTES */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 700;
+    color: var(--tercolor3);
+}
+
+.text-pricolor1{color: var(--pricolor1)!important;}
+.text-pricolor2{color: var(--pricolor2)!important;}
+.text-pricolor3{color: var(--pricolor3)!important;}
+.text-pricolor4{color: var(--pricolor4)!important;}
+.text-seccolor1{color: var(--seccolor1)!important;}
+.text-seccolor2{color: var(--seccolor2)!important;}
+.text-seccolor3{color: var(--seccolor3)!important;}
+.text-seccolor4{color: var(--seccolor4)!important;}
+.text-cincolor {color: var(--cincolor)!important;}
+.text-cincolor2 {color: var(--cincolor2)!important;}
+.text-bcocolor {color: var(--bcocolor)!important;}
+
+
+
+/** LINKS **/
+
+a {
+    text-decoration: none!important;
+}
+
+.link-pricolor1{color: var(--pricolor1);}
+.link-pricolor1{color: var(--pricolor2);}
+.link-pricolor1{color: var(--pricolor3);}
+.link-pricolor1{color: var(--pricolor4);}
+.link-seccolor1{color: var(--seccolor1);}
+.link-seccolor2{color: var(--seccolor2);}
+.link-seccolor3{color: var(--seccolor3);}
+.link-seccolor4{color: var(--seccolor4);}
+.link-cincolor {color: var(--cincolor);}
+.link-bcocolor {color: var(--bcocolor);}
+
+.link-pricolor1:hover {color: var(--seccolor1);}
+.link-pricolor1:hover {color: var(--seccolor2);}
+.link-pricolor1:hover {color: var(--seccolor3);}
+.link-pricolor1:hover {color: var(--seccolor4);}
+.link-seccolor1:hover {color: var(--tercolor1);}
+.link-seccolor2:hover {color: var(--tercolor2);}
+.link-seccolor3:hover {color: var(--tercolor3);}
+.link-seccolor4:hover {color: var(--tercolor4);}
+.link-cincolor :hover {color: var(--pricolor1);}
+.link-bcocolor :hover {color: var(--pricolor1);}
+
+
+/** BOTÕES **/
+
+.btn-basic-sm, .btn-basic, .btn-basic-lg,
+.btn-round-sm, .btn-round, .btn-round-lg {
+    border: none;
+}
+
+.btn-outl-sm, .btn-basic-sm, .btn-round-outl-sm, .btn-round-sm,
+.btn-outl, .btn-basic, .btn-round-outl, .btn-round,
+.btn-outl-lg, .btn-basic-lg, .btn-round-outl-lg, .btn-round-lg {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.btn-outl-sm, .btn-basic-sm, .btn-round-outl-sm, .btn-round-sm {
+    font-size: 0.9rem;
+}
+
+.btn-outl, .btn-basic, .btn-round-outl, .btn-round {
+    font-size: 1rem;
+}
+
+.btn-outl-lg, .btn-basic-lg, .btn-round-outl-lg, .btn-round-lg {
+    font-size: 1.25rem; 
+}
+
+.btn-outl-sm:hover, .btn-basic-sm:hover, .btn-round-outl-sm:hover, .btn-round-sm:hover,
+.btn-outl:hover, .btn-basic:hover, .btn-round-outl:hover, .btn-round:hover,
+.btn-outl-lg:hover, .btn-basic-lg:hover, .btn-round-outl-lg:hover, .btn-round-lg:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+
+a.btn-outl, a.btn-basic, a.btn-round-outl, a.btn-round {
+    text-decoration: none;
+}
+
+.btn-outl-sm, .btn-basic-sm,
+.btn-outl, .btn-basic,
+.btn-outl-lg, .btn-basic-lg {
+    border-radius: 2px;
+}
+.btn-round-outl-sm, .btn-round-sm,
+.btn-outl-sm, .btn-basic-sm {
+    padding: 4px 12px;
+}
+
+.btn-round-outl, .btn-round,
+.btn-outl, .btn-basic {
+    padding: 8px 25px;
+}
+
+.btn-round-outl-lg, .btn-round-lg,
+.btn-outl-lg, .btn-basic-lg {
+    padding: 15px 40px;
+}
+
+.btn-round-outl-sm, .btn-round-sm,
+.btn-round-outl, .btn-round{
+    border-radius: 20px;
+}
+
+.btn-round-outl-lg, .btn-round-lg {
+    border-radius: 30px;
+}
+
+
+.bg-pricolor1, .btn-basic-pricolor1, .btn-round-pricolor1 {background-color: var(--pricolor1); border: 3px solid var(--pricolor1);}
+.bg-pricolor2, .btn-basic-pricolor2, .btn-round-pricolor2 {background-color: var(--pricolor2); border: 3px solid var(--pricolor2);}
+.bg-pricolor3, .btn-basic-pricolor3, .btn-round-pricolor3 {background-color: var(--pricolor3); border: 3px solid var(--pricolor3);}
+.bg-pricolor4, .btn-basic-pricolor4, .btn-round-pricolor4 {background-color: var(--pricolor4); border: 3px solid var(--pricolor4);}
+.bg-seccolor1, .btn-basic-seccolor1, .btn-round-seccolor1 {background-color: var(--seccolor1); border: 3px solid var(--seccolor1);}
+.bg-seccolor2, .btn-basic-seccolor2, .btn-round-seccolor2 {background-color: var(--seccolor2); border: 3px solid var(--seccolor2);}
+.bg-seccolor3, .btn-basic-seccolor3, .btn-round-seccolor3 {background-color: var(--seccolor3); border: 3px solid var(--seccolor3);}
+.bg-seccolor4, .btn-basic-seccolor4, .btn-round-seccolor4 {background-color: var(--seccolor4); border: 3px solid var(--seccolor4);}
+.bg-cincolor, .btn-basic-cincolor, .btn-round-cincolor    {background-color: var(--cincolor);  border: 3px solid var(--cincolor);}
+.bg-cincolor2, .btn-basic-cincolor2, .btn-round-cincolor2    {background-color: var(--cincolor2);  border: 3px solid var(--cincolor2);}
+.bg-bcocolor, .btn-basic-bcocolor, .btn-round-bcocolor    {background-color: var(--bcocolor);  border: 3px solid var(--bcocolor);}
+
+
+.btn-basic-pricolor2, .btn-round-pricolor2,
+.btn-basic-pricolor3, .btn-round-pricolor3,
+.btn-basic-pricolor4, .btn-round-pricolor4,
+.btn-basic-seccolor2, .btn-round-seccolor2,
+.btn-basic-seccolor3, .btn-round-seccolor3,
+.btn-basic-seccolor4, .btn-round-seccolor4,
+.btn-basic-cincolor, .btn-round-cincolor {
+    color: var(--bcocolor);
+}
+
+.btn-basic-pricolor1, .btn-round-pricolor1,
+.btn-basic-seccolor1, .btn-round-seccolor1,
+.btn-basic-bcocolor, .btn-round-bcocolor {
+    color: var(--cincolor);
+}
+
+
+.btn-basic-pricolor1:hover, .btn-round-pricolor1:hover {background-color: transparent!important; color: var(--seccolor1)!important;}
+.btn-basic-pricolor2:hover, .btn-round-pricolor2:hover {background-color: transparent!important; color: var(--seccolor2)!important;}
+.btn-basic-pricolor3:hover, .btn-round-pricolor3:hover {background-color: transparent!important; color: var(--seccolor3)!important;}
+.btn-basic-pricolor4:hover, .btn-round-pricolor4:hover {background-color: transparent!important; color: var(--seccolor4)!important;}
+.btn-basic-seccolor1:hover, .btn-round-seccolor1:hover {background-color: transparent!important; color: var(--tercolor1)!important;}
+.btn-basic-seccolor2:hover, .btn-round-seccolor2:hover {background-color: transparent!important; color: var(--tercolor2)!important;}
+.btn-basic-seccolor3:hover, .btn-round-seccolor3:hover {background-color: transparent!important; color: var(--tercolor3)!important;}
+.btn-basic-seccolor4:hover, .btn-round-seccolor4:hover {background-color: transparent!important; color: var(--tercolor4)!important;}
+.btn-basic-cincolor:hover, .btn-round-cincolor:hover   {background-color: transparent!important; color: var(--cincolor2)!important;}
+.btn-basic-bcocolor:hover, .btn-round-bcocolor:hover   {background-color: transparent!important; color: var(--bcocolor)!important; }
+
+.btn-basic-pricolor1:hover, .btn-round-pricolor1:hover,
+.btn-basic-pricolor2:hover, .btn-round-pricolor2:hover,
+.btn-basic-pricolor3:hover, .btn-round-pricolor3:hover,
+.btn-basic-pricolor4:hover, .btn-round-pricolor4:hover,
+.btn-basic-seccolor1:hover, .btn-round-seccolor1:hover,
+.btn-basic-seccolor2:hover, .btn-round-seccolor2:hover,
+.btn-basic-seccolor3:hover, .btn-round-seccolor3:hover,
+.btn-basic-seccolor4:hover, .btn-round-seccolor4:hover,
+.btn-basic-cincolor:hover, .btn-round-cincolor:hover {
+    background-color: transparent;
+    color: var(--bcocolor);
+}
+
+.btn-basic-cincolor:hover, .btn-round-cincolor:hover {
+    color: var(--cincolor);
+}
+
+.btn-basic-bcocolor:hover, .btn-round-bcocolor:hover {
+    background-color: var(--cincolor);
+    color: var(--bcocolor);
+}
+
+.btn-outl-sm-bgdrk, .btn-round-outl-sm-bgdrk,
+.btn-outl-bgdrk, .btn-round-outl-bgdrk,
+.btn-outl-lg-bgdrk, .btn-round-outl-lg-bgdrk,
+.btn-outl-sm, .btn-round-outl-sm,
+.btn-outl, .btn-round-outl,
+.btn-outl-lg, .btn-round-outl-lg {
+    border-width: 3px;
+    border-style: solid;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.btn-outl-pricolor1, .btn-round-outl-pricolor1 {border-color: var(--pricolor1); color: var(--pricolor1);}
+.btn-outl-pricolor2, .btn-round-outl-pricolor2 {border-color: var(--pricolor2); color: var(--pricolor2);}
+.btn-outl-pricolor3, .btn-round-outl-pricolor3 {border-color: var(--pricolor3); color: var(--pricolor3);}
+.btn-outl-pricolor4, .btn-round-outl-pricolor4 {border-color: var(--pricolor4); color: var(--pricolor4);}
+.btn-outl-seccolor1, .btn-round-outl-seccolor1 {border-color: var(--seccolor1); color: var(--seccolor1);}
+.btn-outl-seccolor2, .btn-round-outl-seccolor2 {border-color: var(--seccolor2); color: var(--seccolor2);}
+.btn-outl-seccolor3, .btn-round-outl-seccolor3 {border-color: var(--seccolor3); color: var(--seccolor3);}
+.btn-outl-seccolor4, .btn-round-outl-seccolor4 {border-color: var(--seccolor4); color: var(--seccolor4);}
+.btn-outl-cincolor, .btn-round-outl-cincolor {border-color: var(--cincolor); color: var(--cincolor);}
+.btn-outl-bcocolor, .btn-round-outl-bcocolor {border-color: white; color: white;}
+
+.btn-outl-sm:hover, .btn-round-outl-sm:hover,
+.btn-outl:hover, .btn-round-outl:hover,
+.btn-outl-lg:hover, .btn-round-outl-lg:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.btn-outl-pricolor1:hover, .btn-round-outl-pricolor1:hover {background-color: var(--pricolor1);}
+.btn-outl-pricolor2:hover, .btn-round-outl-pricolor2:hover {background-color: var(--pricolor2);}
+.btn-outl-pricolor3:hover, .btn-round-outl-pricolor3:hover {background-color: var(--pricolor3);}
+.btn-outl-pricolor4:hover, .btn-round-outl-pricolor4:hover {background-color: var(--pricolor4);}
+.btn-outl-seccolor1:hover, .btn-round-outl-seccolor1:hover {background-color: var(--seccolor1);}
+.btn-outl-seccolor2:hover, .btn-round-outl-seccolor2:hover {background-color: var(--seccolor2);}
+.btn-outl-seccolor3:hover, .btn-round-outl-seccolor3:hover {background-color: var(--seccolor3);}
+.btn-outl-seccolor4:hover, .btn-round-outl-seccolor4:hover {background-color: var(--seccolor4);}
+.btn-outl-cincolor:hover, .btn-round-outl-cincolor:hover {background-color: var(--cincolor);}
+
+.btn-outl-bcocolor:hover, .btn-round-outl-bcocolor:hover {
+    background-color: var(--bcocolor);
+    color: var(--cincolor);
+}
+
+.btn-outl-pricolor1:hover, .btn-round-outl-pricolor1:hover,
+.btn-outl-seccolor1:hover, .btn-round-outl-seccolor1:hover {
+    color: var(--cincolor);
+}
+
+
+
+/** Botões Sociais **/
+.btn-social-simpl-sm, .btn-social-simpl, .btn-social-simpl-lg,
+.btn-social-circ-outl-sm, .btn-social-circ-outl, .btn-social-circ-outl-lg,
+.btn-social-circ-sm, .btn-social-circ, .btn-social-circ-lg,
+.btn-social-quad-sm, .btn-social-quad, .btn-social-quad-lg,
+.btn-social-circ-outl-sm, .btn-social-circ-outl, .btn-social-circ-outl-lg,
+.btn-social-quad-outl-sm, .btn-social-quad-outl, .btn-social-quad-outl-lg{
+    display: inline-block;
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-align: center;
+}
+
+.btn-social-simpl-sm-bgdrk, .btn-social-simpl-bgdrk, .btn-social-simpl-lg-bgdrk,
+.btn-social-circ-outl-sm-bgdrk, .btn-social-circ-outl-bgdrk, .btn-social-circ-outl-lg-bgdrk,
+.btn-social-circ-sm-bgdrk, .btn-social-circ-bgdrk, .btn-social-circ-lg-bgdrk,
+.btn-social-quad-sm-bgdrk, .btn-social-quad-bgdrk, .btn-social-quad-lg-bgdrk,
+.btn-social-circ-outl-sm-bgdrk, .btn-social-circ-outl-bgdrk, .btn-social-circ-outl-lg-bgdrk,
+.btn-social-quad-outl-sm-bgdrk, .btn-social-quad-outl-bgdrk, .btn-social-quad-outl-lg-bgdrk{
+    display: inline-block;
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-align: center;
+    color: white!important;
+}
+
+.btn-social-circ-sm, .btn-social-circ, .btn-social-circ-lg,
+.btn-social-quad-sm, .btn-social-quad, .btn-social-quad-lg {
+    color: #FFF;
+}
+
+.btn-social-circ-outl-sm, .btn-social-circ-outl, .btn-social-circ-outl-lg,
+.btn-social-circ-sm, .btn-social-circ, .btn-social-circ-lg {
+    border-radius: 50%;
+}
+
+.btn-social-quad-sm, .btn-social-quad-outl-sm, 
+.btn-social-circ-sm, .btn-social-circ-outl-sm {
+    width: 35px;
+    height: 35px;
+}
+
+.btn-social-simpl-sm-bgdrk,
+.btn-social-simpl-sm{
+    font-size: 1.5rem;
+    margin: 0 2px;
+}
+
+.btn-social-quad-sm-bgdrk, .btn-social-quad-outl-sm-bgdrk,
+.btn-social-circ-sm-bgdrk, .btn-social-circ-outl-sm-bgdrk ,
+.btn-social-quad-sm, .btn-social-quad-outl-sm,
+.btn-social-circ-sm, .btn-social-circ-outl-sm {
+    font-size: 1rem!important;
+}
+
+.btn-social-quad-sm-bgdrk,
+.btn-social-circ-sm-bgdrk,
+.btn-social-quad-sm,
+.btn-social-circ-sm {
+    line-height: 2.2rem;
+}
+
+.btn-social-quad-outl-sm-bgdrk,
+.btn-social-circ-outl-sm-bgdrk,
+.btn-social-quad-outl-sm,
+.btn-social-circ-outl-sm {
+    line-height: 1.8rem;
+}
+
+.btn-social-quad, .btn-social-quad-outl,
+.btn-social-circ, .btn-social-circ-outl {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-social-simpl-bgdrk,
+.btn-social-simpl{
+    font-size: 2.2rem;
+    margin: 0 4px;
+}
+
+.btn-social-quad-bgdrk, .btn-social-quad-outl-bgdrk,
+.btn-social-circ-bgdrk, .btn-social-circ-outl-bgdrk,
+.btn-social-quad, .btn-social-quad-outl,
+.btn-social-circ, .btn-social-circ-outl {
+    font-size: 1.2rem!important;
+}
+
+.btn-social-quad-bgdrk,
+.btn-social-circ-bgdrk,
+.btn-social-quad,
+.btn-social-circ{
+    line-height: 3.2rem;
+}
+
+.btn-social-quad-outl-bgdrk,
+.btn-social-circ-outl-bgdrk,
+.btn-social-quad-outl,
+.btn-social-circ-outl {
+    line-height: 2.9rem;
+}
+
+.btn-social-quad-lg, .btn-social-quad-outl-lg,
+.btn-social-circ-lg, .btn-social-circ-outl-lg {
+    width: 75px;
+    height: 75px;
+}
+
+.btn-social-simpl-lg-bgdrk,
+.btn-social-simpl-lg{
+    font-size: 3rem!important;
+    margin: 0 5px;
+}
+
+.btn-social-quad-lg-bgdrk, .btn-social-quad-outl-lg-bgdrk,
+.btn-social-circ-lg-bgdrk, .btn-social-circ-outl-lg-bgdrk,
+.btn-social-quad-lg, .btn-social-quad-outl-lg,
+.btn-social-circ-lg, .btn-social-circ-outl-lg {
+    font-size: 2rem;
+}
+
+.btn-social-quad-lg-bgdrk,
+.btn-social-circ-lg-bgdrk,
+.btn-social-quad-lg,
+.btn-social-circ-lg{
+    line-height: 4.8rem;
+}
+
+.btn-social-quad-outl-lg-bgdrk,
+.btn-social-circ-outl-lg-bgdrk,
+.btn-social-quad-outl-lg,
+.btn-social-circ-outl-lg {
+    line-height: 4.3rem;
+}
+
+.btn-social-simpl-sm:hover, .btn-social-simpl:hover, .btn-social-simpl-lg:hover,
+.btn-social-quad-sm:hover, .btn-social-quad:hover, .btn-social-quad-lg:hover,
+.btn-social-circ-sm:hover, .btn-social-circ:hover, .btn-social-circ-lg:hover,
+.btn-social-circ-outl-sm:hover, .btn-social-circ-outl:hover, .btn-social-circ-outl-lg:hover,
+.btn-social-quad-outl-sm:hover, .btn-social-quad-outl:hover, .btn-social-quad-outl-lg:hover {
+    text-decoration: none;
+}
+
+.btn-social-quad-sm:hover, .btn-social-quad:hover, .btn-social-quad-lg:hover,
+.btn-social-circ-sm:hover, .btn-social-circ:hover, .btn-social-circ-lg:hover,
+.btn-social-circ-outl-sm:hover, .btn-social-circ-outl:hover, .btn-social-circ-outl-lg:hover,
+.btn-social-quad-outl-sm:hover, .btn-social-quad-outl:hover, .btn-social-quad-outl-lg:hover {
+    color: #FFF;
+}
+
+.btn-social-simpl-sm:hover, .btn-social-simpl:hover, .btn-social-simpl-lg:hover {
+    color: var(--cincolor);
+}
+
+.btn-social-quad-sm:hover, .btn-social-quad:hover, .btn-social-quad-lg:hover,
+.btn-social-circ-sm:hover, .btn-social-circ:hover, .btn-social-circ-lg:hover {
+    background-color: var(--cincolor);
+}
+
+/* FACEBOOK */
+
+.btn-social-simpl-facebook:before, 
+.btn-social-outl-facebook:before, 
+.btn-social-facebook:before {
+    content: "\f09a";
+}
+
+.btn-social-facebook,
+.btn-social-outl-facebook:hover {
+    background-color: var(--facebook);
+}
+
+.btn-social-simpl-facebook,
+.btn-social-outl-facebook {
+    color: var(--facebook);
+}
+
+.btn-social-outl-facebook {
+    border: 3px solid var(--facebook);
+}
+
+/* GOOGLE */
+
+.btn-social-simpl-google:before, 
+.btn-social-outl-google:before, 
+.btn-social-google:before {
+    content: "\f1a0";
+}
+
+.btn-social-google,
+.btn-social-outl-google:hover {
+    background-color: var(--gplus);
+}
+
+.btn-social-simpl-google,
+.btn-social-outl-google {
+    color: var(--gplus);
+}
+
+.btn-social-outl-google {
+    border: 3px solid var(--gplus);
+}
+
+/* LINKEDIN */
+
+.btn-social-simpl-linkedin:before,
+.btn-social-outl-linkedin:before,
+.btn-social-linkedin:before {
+    content: "\f0e1";
+}
+
+.btn-social-linkedin,
+.btn-social-outl-linkedin:hover {
+    background-color: var(--linkedin);
+}
+
+.btn-social-simpl-linkedin,
+.btn-social-outl-linkedin {
+    color: var(--linkedin);
+}
+
+.btn-social-outl-linkedin {
+    border: 3px solid var(--linkedin);
+}
+
+/* TWITTER */
+
+.btn-social-simpl-twitter:before,
+.btn-social-outl-twitter:before,
+.btn-social-twitter:before {
+    content: "\f099";
+}
+.btn-social-twitter,
+.btn-social-outl-twitter:hover {
+    background-color: var(--twitter);
+}
+
+.btn-social-simpl-twitter,
+.btn-social-outl-twitter {
+    color: var(--twitter);
+}
+
+.btn-social-outl-twitter {
+    border: 3px solid var(--twitter);
+}
+
+/* PINTEREST */
+
+.btn-social-simpl-pinterest:before,
+.btn-social-outl-pinterest:before,
+.btn-social-pinterest:before {
+    content: "\f231";
+}
+.btn-social-pinterest,
+.btn-social-outl-pinterest:hover {
+    background-color: var(--pinterest);
+}
+
+.btn-social-simpl-pinterest,
+.btn-social-outl-pinterest {
+    color: var(--pinterest);
+}
+
+.btn-social-outl-pinterest {
+    border: 3px solid var(--pinterest);
+}
+
+/* GITHUB */
+
+.btn-social-simpl-github:before,
+.btn-social-outl-github:before,
+.btn-social-github:before {
+    content: "\f09b";
+}
+.btn-social-github,
+.btn-social-outl-github:hover {
+    background-color: var(--github);
+}
+
+.btn-social-simpl-github,
+.btn-social-outl-github {
+    color: var(--github);
+}
+
+.btn-social-outl-github {
+    border: 3px solid var(--github);
+}
+
+/* INSTAGRAM */
+
+.btn-social-simpl-instagram:before,
+.btn-social-outl-instagram:before,
+.btn-social-instagram:before {
+    content: "\f16d";
+}
+.btn-social-instagram,
+.btn-social-outl-instagram:hover {
+    background-color: var(--instagram);
+}
+
+.btn-social-simpl-instagram,
+.btn-social-outl-instagram {
+    color: var(--instagram);
+}
+
+.btn-social-outl-instagram {
+    border: 3px solid var(--instagram);
+}
+
+/* BEHANCE */
+
+.btn-social-simpl-behance:before,
+.btn-social-outl-behance:before,
+.btn-social-behance:before {
+    content: "\f1b4";
+}
+.btn-social-behance,
+.btn-social-outl-behance:hover {
+    background-color: var(--behance);
+}
+
+.btn-social-simpl-behance,
+.btn-social-outl-behance {
+    color: var(--behance);
+}
+
+.btn-social-outl-behance {
+    border: 3px solid var(--behance);
+}
+
+/* YOUTUBE */
+
+.btn-social-simpl-youtube:before,
+.btn-social-outl-youtube:before,
+.btn-social-youtube:before {
+    content: "\f167";
+}
+.btn-social-youtube,
+.btn-social-outl-youtube:hover {
+    background-color: var(--youtube);
+}
+
+.btn-social-simpl-youtube,
+.btn-social-outl-youtube {
+    color: var(--youtube);
+}
+
+.btn-social-outl-youtube {
+    border: 3px solid var(--youtube);
+}
+
+/* VIMEO */
+
+.btn-social-simpl-vimeo:before,
+.btn-social-outl-vimeo:before,
+.btn-social-vimeo:before {
+    content: "\f27d";
+}
+.btn-social-vimeo,
+.btn-social-outl-vimeo:hover {
+    background-color: var(--vimeo);
+}
+
+.btn-social-simpl-vimeo,
+.btn-social-outl-vimeo {
+    color: var(--vimeo);
+}
+
+.btn-social-outl-vimeo {
+    border: 3px solid var(--vimeo);
+}
+
+/* WHATSAPP */
+
+.btn-social-simpl-whatsapp:before,
+.btn-social-outl-whatsapp:before,
+.btn-social-whatsapp:before {
+    content: "\f232";
+}
+.btn-social-whatsapp,
+.btn-social-outl-whatsapp:hover {
+    background-color: var(--whatsapp);
+}
+
+.btn-social-simpl-whatsapp,
+.btn-social-outl-whatsapp {
+    color: var(--whatsapp);
+}
+
+.btn-social-outl-whatsapp {
+    border: 3px solid var(--whatsapp);
+}
+
+/* GOOGLE PLUS */
+
+.btn-social-simpl-googleplus:before,
+.btn-social-outl-googleplus:before,
+.btn-social-googleplus:before {
+    content: "\f0d5";
+}
+.btn-social-googleplus,
+.btn-social-outl-googleplus:hover {
+    background-color: var(--googleplus);
+}
+
+.btn-social-simpl-googleplus,
+.btn-social-outl-googleplus {
+    color: var(--googleplus);
+}
+
+.btn-social-outl-googleplus {
+    border: 3px solid var(--googleplus);
+}
+
+/* TUMBLR */
+
+.btn-social-simpl-tumblr:before,
+.btn-social-outl-tumblr:before,
+.btn-social-tumblr:before {
+    content: "\f173";
+}
+.btn-social-tumblr,
+.btn-social-outl-tumblr:hover {
+    background-color: var(--tumblr);
+}
+
+.btn-social-simpl-tumblr,
+.btn-social-outl-tumblr {
+    color: var(--tumblr);
+}
+
+.btn-social-outl-tumblr {
+    border: 3px solid var(--tumblr);
+}
+
+/* SPOTIFY */
+
+.btn-social-simpl-spotify:before,
+.btn-social-outl-spotify:before,
+.btn-social-spotify:before {
+    content: "\f1bc";
+}
+
+.btn-social-spotify,
+.btn-social-outl-spotify:hover {
+    background-color: var(--spotify);
+}
+
+.btn-social-simpl-spotify,
+.btn-social-outl-spotify {
+    color: var(--spotify);
+}
+
+.btn-social-outl-spotify {
+    border: 3px solid var(--spotify);
+}
+
+/* 
+-------------------------------------- 
+-- GRADIENTES -- 
+-------------------------------------- 
+*/
+
+/* Gradientes com duas cores */
+
+/* PRIMÁRIA 1 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 2*/
+
+.bg-grad-hor-pri1-pri2{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri1-pri2{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-pri1-pri3{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri1-pri3{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-pri1-pri4{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri1-pri4{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-pri1-sec1{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri1-sec1{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-pri1-sec2{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri1-sec2{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-pri1-sec3{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri1-sec3{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-pri1-sec4{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri1-sec4{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-pri1-cin{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri1-cin{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* PRIMÁRIA 2 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 2*/
+
+.bg-grad-hor-pri2-pri1{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-pri1{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-pri2-pri3{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-pri3{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-pri2-pri4{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-pri4{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-pri2-sec1{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-sec1{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-pri2-sec2{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-sec2{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-pri2-sec3{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-sec3{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-pri2-sec4{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-sec4{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-pri2-cin{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-cin{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* PRIMÁRIA 2 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 2*/
+
+.bg-grad-hor-pri2-pri1{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-pri1{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-pri2-pri3{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-pri3{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-pri2-pri4{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-pri4{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-pri2-sec1{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-sec1{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-pri2-sec2{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-sec2{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-pri2-sec3{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-sec3{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-pri2-sec4{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-sec4{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-pri2-cin{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri2-cin{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* PRIMÁRIA 3 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-pri3-pri1{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-pri3-pri1{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-pri3-pri2{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri3-pri2{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-pri3-pri4{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-pri3-pri4{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-pri3-sec1{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-pri3-sec1{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-pri3-sec2{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-pri3-sec2{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-pri3-sec3{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-pri3-sec3{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-pri3-sec4{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-pri3-sec4{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-pri3-cin{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-pri3-cin{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* PRIMÁRIA 4 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-pri4-pri1{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-pri4-pri1{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-pri4-pri2{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-pri4-pri2{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-pri4-pri3{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-pri4-pri3{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-pri4-sec1{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-pri4-sec1{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-pri4-sec2{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-pri4-sec2{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-pri4-sec3{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-pri4-sec3{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-pri4-sec4{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-pri4-sec4{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-pri4-cin{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-pri4-cin{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* SECUNDÁRIA 1 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec1-pri1{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-pri1{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-sec1-pri2{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-pri2{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec1-pri3{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-pri3{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec1-pri4{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-pri4{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-sec1-sec1{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-sec1{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-sec1-sec2{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-sec2{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-sec1-sec3{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-sec3{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-sec1-sec4{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-sec4{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-sec1-cin{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(left, var(--seccolor1) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor1) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--seccolor1) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--seccolor1)',GradientType=1 );
+}
+
+.bg-grad-ver-sec1-cin{
+    background: var(--seccolor1);
+    background: -moz-linear-gradient(top, var(--seccolor1) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor1) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--seccolor1) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor1)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* SECUNDÁRIA 2 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec2-pri1{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-pri1{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-sec2-pri2{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-pri2{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec2-pri3{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-pri3{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec2-pri4{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-pri4{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-sec2-sec1{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-sec1{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-sec2-sec2{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-sec2{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-sec2-sec3{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-sec3{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-sec2-sec4{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-sec4{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-sec2-cin{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(left, var(--seccolor2) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor2) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--seccolor2) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec2-cin{
+    background: var(--seccolor2);
+    background: -moz-linear-gradient(top, var(--seccolor2) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor2) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--seccolor2) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor2)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* SECUNDÁRIA 3 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec3-pri1{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-pri1{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-sec3-pri2{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-pri2{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec3-pri3{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-pri3{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec3-pri4{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-pri4{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-sec3-sec1{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-sec1{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-sec3-sec2{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-sec2{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-sec3-sec3{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-sec3{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-sec3-sec4{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-sec4{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-sec3-cin{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(left, var(--seccolor3) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor3) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--seccolor3) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--seccolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec3-cin{
+    background: var(--seccolor3);
+    background: -moz-linear-gradient(top, var(--seccolor3) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor3) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--seccolor3) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor3)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* SECUNDÁRIA 4 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec4-pri1{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-pri1{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-sec4-pri2{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-pri2{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec4-pri3{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-pri3{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-sec4-pri4{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-pri4{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-sec4-sec1{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-sec1{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-sec4-sec2{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-sec2{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-sec4-sec3{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-sec3{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-sec4-sec4{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-sec4{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-sec4-cin{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(left, var(--seccolor4) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--seccolor4) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--seccolor4) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--seccolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-sec4-cin{
+    background: var(--seccolor4);
+    background: -moz-linear-gradient(top, var(--seccolor4) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--seccolor4) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--seccolor4) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--seccolor4)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* CINZA 4 */
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-cin-pri1{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--cincolor)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-pri1{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--pricolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--pricolor1) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--pricolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--cincolor)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 3*/
+
+.bg-grad-hor-cin-pri2{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--pricolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-pri2{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--pricolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--pricolor2) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--pricolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-cin-pri3{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-pri3{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--pricolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--pricolor3) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--pricolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor primária 4*/
+
+.bg-grad-hor-cin-pri4{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--pricolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-pri4{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--pricolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--pricolor4) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--pricolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--pricolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 1*/
+
+.bg-grad-hor-cin-sec1{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--cincolor)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-sec1{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--seccolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--seccolor1) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--seccolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--cincolor)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 2*/
+
+.bg-grad-hor-cin-sec2{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-sec2{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--seccolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--seccolor2) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--seccolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--seccolor2)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 3*/
+
+.bg-grad-hor-cin-sec3{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--cincolor)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-sec3{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--seccolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--seccolor3) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--seccolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--seccolor3)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cor secundária 4*/
+
+.bg-grad-hor-cin-sec4{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--seccolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-sec4{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--seccolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--seccolor4) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--seccolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--seccolor4)',GradientType=0 );
+}
+
+/* Inciando com cor primária 1 Terminando com cinza*/
+
+.bg-grad-hor-cin-cin{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(left, var(--cincolor) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(left, var(--cincolor) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to right, var(--cincolor) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--cincolor)',GradientType=1 );
+}
+
+.bg-grad-ver-cin-cin{
+    background: var(--cincolor);
+    background: -moz-linear-gradient(top, var(--cincolor) 0%, var(--cincolor) 100%);
+    background: -webkit-linear-gradient(top, var(--cincolor) 0%,var(--cincolor) 100%);
+    background: linear-gradient(to bottom, var(--cincolor) 0%,var(--cincolor) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cincolor)', endColorstr='var(--pricolor2)',GradientType=0 );
+}
+
+/* GRADIENTE DE 3 CORES */
+
+/* Cor primária 1 */
+
+.bg-grad-hor-3color-pri1{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(left, var(--pricolor1) 0%, var(--seccolor1) 50%, var(--tercolor1) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor1) 0%,var(--seccolor1) 50%,var(--tercolor1) 100%);
+    background: linear-gradient(to right, var(--pricolor1) 0%,var(--seccolor1) 50%,var(--tercolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--seccolor1)',GradientType=1 );
+}
+
+.bg-grad-ver-3color-pri1{
+    background: var(--pricolor1);
+    background: -moz-linear-gradient(top, var(--pricolor1) 0%, var(--seccolor1) 50%, var(--tercolor1) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor1) 0%,var(--seccolor1) 50%,var(--tercolor1) 100%);
+    background: linear-gradient(to bottom, var(--pricolor1) 0%,var(--seccolor1) 50%,var(--tercolor1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor1)', endColorstr='var(--seccolor1)',GradientType=1 );
+}
+
+/* Cor primária 2 */
+
+.bg-grad-hor-3color-pri2{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(left, var(--pricolor2) 0%, var(--seccolor2) 50%, var(--tercolor2) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor2) 0%,var(--seccolor2) 50%,var(--tercolor2) 100%);
+    background: linear-gradient(to right, var(--pricolor2) 0%,var(--seccolor2) 50%,var(--tercolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+.bg-grad-ver-3color-pri2{
+    background: var(--pricolor2);
+    background: -moz-linear-gradient(top, var(--pricolor2) 0%, var(--seccolor2) 50%, var(--tercolor2) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor2) 0%,var(--seccolor2) 50%,var(--tercolor2) 100%);
+    background: linear-gradient(to bottom, var(--pricolor2) 0%,var(--seccolor2) 50%,var(--tercolor2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor2)', endColorstr='var(--seccolor2)',GradientType=1 );
+}
+
+/* Cor primária 3 */
+
+.bg-grad-hor-3color-pri3{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(left, var(--pricolor3) 0%, var(--seccolor3) 50%, var(--tercolor3) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor3) 0%,var(--seccolor3) 50%,var(--tercolor3) 100%);
+    background: linear-gradient(to right, var(--pricolor3) 0%,var(--seccolor3) 50%,var(--tercolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--seccolor3)',GradientType=1 );
+}
+
+.bg-grad-ver-3color-pri3{
+    background: var(--pricolor3);
+    background: -moz-linear-gradient(top, var(--pricolor3) 0%, var(--seccolor3) 50%, var(--tercolor3) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor3) 0%,var(--seccolor3) 50%,var(--tercolor3) 100%);
+    background: linear-gradient(to bottom, var(--pricolor3) 0%,var(--seccolor3) 50%,var(--tercolor3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor3)', endColorstr='var(--seccolor3)',GradientType=1 );
+}
+
+/* Cor primária 4 */
+
+.bg-grad-hor-3color-pri4{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(left, var(--pricolor4) 0%, var(--seccolor4) 50%, var(--tercolor4) 100%);
+    background: -webkit-linear-gradient(left, var(--pricolor4) 0%,var(--seccolor4) 50%,var(--tercolor4) 100%);
+    background: linear-gradient(to right, var(--pricolor4) 0%,var(--seccolor4) 50%,var(--tercolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--seccolor4)',GradientType=1 );
+}
+
+.bg-grad-ver-3color-pri4{
+    background: var(--pricolor4);
+    background: -moz-linear-gradient(top, var(--pricolor4) 0%, var(--seccolor4) 50%, var(--tercolor4) 100%);
+    background: -webkit-linear-gradient(top, var(--pricolor4) 0%,var(--seccolor4) 50%,var(--tercolor4) 100%);
+    background: linear-gradient(to bottom, var(--pricolor4) 0%,var(--seccolor4) 50%,var(--tercolor4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--pricolor4)', endColorstr='var(--seccolor4)',GradientType=1 );
+}
+

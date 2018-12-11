@@ -16,3 +16,274 @@ Use it to make something cool, have fun, and share what you've learned with othe
 beatech is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
+
+@import url('assets/css/templates/beatech.css');
+
+:root {
+    --pricolor1: #F6CD00;
+    --pricolor2: #00ABE6;
+    --pricolor3: #DA0039;
+    --pricolor4: #5B168B;
+    --seccolor1: #FFA134;
+    --seccolor2: #007BC1;
+    --seccolor3: #A30A2F;
+    --seccolor4: #7C45A2;
+    --tercolor1: #e67a00;
+    --tercolor2: #006199;
+    --tercolor3: #780824;
+    --tercolor4: #48116e;
+    --cincolor: #373737;
+    --cincolor2: #808080;
+    --bcocolor: #FFFFFF;
+
+    --facebook: #3b5998;
+    --twitter: #26A7DE;
+    --gplus: #DB4A39;
+    --linkedin: #0e76a8;
+    --pinterest: #c8232c;
+    --github: #333;
+    --instagram: #e95950;
+    --behance: #1769ff;
+    --youtube: #bb0000;
+    --vimeo: #aad450;
+    --whatsapp: #4dc247;
+    --googleplus: #dd4b39;
+    --tumblr: #32506d;
+    --spotify: #00e461;
+}
+
+/* TOP NAVBAR */
+
+.redborder{
+    border: 1px solid red;
+}
+
+.navbar-top-beatech {}
+
+.navbar-top-beatech li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--seccolor3)!important;
+}
+
+.navbar-top-beatech li a:hover {
+    color: var(--tercolor3)!important;
+}
+
+/* Hero Principal */
+
+.hero-principal {
+    height: 400px;
+    background-image: url(../../assets/img/bghero.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.hero-principal::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255,255,255,.9);
+}
+
+.cto {
+    z-index: 9;
+}
+
+.cto .cto-title{
+
+}
+
+.cto .cto-title h2 {
+    font-family: 'Montserrat', sans-serif!important;
+    font-size: 2rem;
+}
+
+.cto .cto-title h2>span {
+    font-family: 'Anton', sans-serif!important;
+    font-size: 5.5rem;
+}
+
+/* Serviços */
+
+.services {
+    min-height: 480px;
+}
+
+.card-service {
+
+}
+
+.card-service img{
+    width: 125px;
+}
+
+.card-service h4{
+    font-family: 'Montserrat', sans-serif!important;
+    min-height: 56px;
+}
+
+.card-service p{
+    min-height: 100px;
+}
+
+/** FOOTER **/
+
+.top-footer {
+    height: 120px;
+}
+
+.top-footer .row{
+    height: 120px;
+}
+
+.sobre-logo img{
+    width:250px;
+}
+
+.footer-topico ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-topico ul li a{
+    color: var(--seccolor1);
+}
+
+.footer-topico ul li a:hover{
+    color: var(--bcocolor);
+}
+
+.copyright-text {
+    margin: 0;
+    font-size: 0.75rem;
+    padding: 10px;
+}
+
+.menu-footer li{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.menu-footer li a{
+    text-transform: uppercase;
+}
+
+.footer-topico-titulo{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/** Anúncios **/
+
+.anuncios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a6268;
+    text-transform: uppercase;
+    color: var(--pricolor3);
+    font-weight: bold;
+    text-align: center;
+}
+
+.anuncio300x600 {
+    width: 300px;
+    height: 600px;
+    font-size: 2.5rem;
+    background-image: url("https://placeimg.com/300/600/tech");
+}
+
+.anuncio300x250 {
+    width: 300px;
+    height: 250px;
+    font-size: 2.5rem;
+    background-image: url("https://placeimg.com/300/250/tech");
+}
+
+.anuncio320x100 {
+    width: 320px;
+    height: 100px;
+    font-size: 2rem;
+    background-image: url("https://placeimg.com/320/100/tech");
+}
+
+.anuncio336x280 {
+    width: 336px;
+    height: 280px;
+    font-size: 2rem;
+    background-image: url("https://placeimg.com/336/280/tech");
+}
+
+.anuncio728x90 {
+    width: 728px;
+    height: 90px;
+    font-size: 2rem;
+    background-image: url("https://placeimg.com/728/90/tech");
+}
+
+.anuncio970x90 {
+    width: 970px;
+    height: 90px;
+    font-size: 2rem;
+    background-image: url("https://placeimg.com/970/90/tech");
+}
+
+
+/** CSS de Página **/
+
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
+
+@media (min-width: 768px) {
+    .pagina main {
+        width: calc(100% - 320px);
+        margin-right: 10px;
+    }
+    .pagina aside {
+        width: 300px;
+        margin-left: 10px;
+    }
+}
+
+/** HERO */
+.hero-page {
+    display: block;
+    width: 100%;
+    height: 300px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.hero-page:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.6);
+    top: 0;
+    z-index: 1;
+}
+
+.hero-page .row{
+    height: 300px;
+}
+
+.hero-titulo{
+    z-index: 2;
+}
+
+
+
