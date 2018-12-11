@@ -6,7 +6,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <aside class="">
     <div class="px-4 px-md-0">
-        <h2>h2 do Aside</h2>
+        <h2>h2 do Aside - Teste</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam autem delectus dolores eaque error, et laboriosam libero modi omnis quae quidem quo, quos ratione rem repellat vel voluptas voluptates? Aut consectetur cum explicabo possimus sint!</p>
     </div>
     <div class="row justify-content-center w-100 my-0">
