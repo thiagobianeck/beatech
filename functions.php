@@ -157,6 +157,18 @@ function google_analytics() { ?>
 
 <?php }
 
+add_action('wp_head', 'mailchimp', 20);
+
+function mailchimp() { ?>
+    <script id="mcjs">
+        !function(c,h,i,m,p){
+            m=c.createElement(h),p=c.getElementsByTagName(h)[0],
+            m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
+        }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8437a1fd4acdfcf367f56f2b1/de7a69cde7c9f98cab9d64706.js");
+    </script>
+
+<?php }
+
 
 /**
  * Implement the Custom Header feature.

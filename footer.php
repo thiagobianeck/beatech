@@ -7,7 +7,7 @@
             <div class="col-md-6 col-lg-5 my-2 my-md-0">
                 <div class="social-icons text-white text-center text-md-right">
                     <a href="https://www.facebook.com/beatech.technology" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-facebook"></a>
-<!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-linkedin"></a>-->
+                    <a href="https://www.linkedin.com/company/beatechtechnology/" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-linkedin"></a>
 <!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-twitter"></a>-->
 <!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-pinterest"></a>-->
 <!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-github"></a>-->
