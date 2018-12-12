@@ -127,6 +127,7 @@ function beatech_scripts() {
 	/** Estilos */
 	wp_enqueue_style( 'bootstrap4-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.1.3');
 	wp_enqueue_style( 'fontawesome-css', get_template_directory_uri() . '/assets/css/all.min.css', array(), '5.0.0');
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Amaranth:400,700|Josefin+Sans:300,400,600,700|Montserrat:200,300,400,500,600,700,800,900|Raleway:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900', array(), '1.0.0');
     wp_enqueue_style( 'beatech-style', get_stylesheet_uri() );
 
 

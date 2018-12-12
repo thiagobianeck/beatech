@@ -16,7 +16,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 beatech is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900|Raleway:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900|Josefin+Sans:300,400,600,700|Amaranth:400,700|Anton');
 @import url('assets/css/templates/beatech.css');
 @import url('assets/css/templates/mailchimp.css');
 @import url('assets/css/templates/depoimentos.css');
