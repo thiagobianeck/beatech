@@ -22,6 +22,14 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#A30A2F">
 
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-4915165216584421",
+            enable_page_level_ads: true
+        });
+    </script>
+
 	<?php wp_head(); ?>
 </head>
 
