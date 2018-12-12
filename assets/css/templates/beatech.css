@@ -277,7 +277,7 @@ a.btn-outl, a.btn-basic, a.btn-round-outl, a.btn-round {
 .btn-social-circ-outl-sm, .btn-social-circ-outl, .btn-social-circ-outl-lg,
 .btn-social-quad-outl-sm, .btn-social-quad-outl, .btn-social-quad-outl-lg{
     display: inline-block;
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Brands";
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     text-align: center;
@@ -290,7 +290,7 @@ a.btn-outl, a.btn-basic, a.btn-round-outl, a.btn-round {
 .btn-social-circ-outl-sm-bgdrk, .btn-social-circ-outl-bgdrk, .btn-social-circ-outl-lg-bgdrk,
 .btn-social-quad-outl-sm-bgdrk, .btn-social-quad-outl-bgdrk, .btn-social-quad-outl-lg-bgdrk{
     display: inline-block;
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Brands";
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     text-align: center;
