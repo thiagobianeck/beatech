@@ -41,35 +41,41 @@
     </div>
     <div class="linha-topo bg-grad-hor-3color-pri3"></div>
 </header>
-<div class="">
-    <section class="d-block d-md-none bg-cincolor">
-        <div class="container">
-            <div class="row justify-content-center py-3">
-                <div class="anuncios anuncio320x100">
-                    <p>320 x 100</p>
-                </div>
-            </div>
+<?php
 
-        </div>
-    </section>
-    <section class="d-none d-md-block d-lg-none bg-cincolor">
-        <div class="container">
-            <div class="row justify-content-center py-3">
-                <div class="anuncios anuncio728x90">
-                    <p>728 x 90</p>
-                </div>
-            </div>
+$paginassemanuncio = is_front_page();
 
-        </div>
-    </section>
-    <section class="d-none d-lg-block bg-cincolor">
-        <div class="container">
-            <div class="row justify-content-center py-3">
-                <div class="anuncios anuncio970x90">
-                    <p>970 x 90</p>
+if(!$paginassemanuncio):?>
+    <div class="">
+        <section class="d-block d-md-none bg-cincolor">
+            <div class="container">
+                <div class="row justify-content-center py-3">
+                    <div class="anuncios anuncio320x100">
+                        <p>320 x 100</p>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-    </section>
-</div>
+            </div>
+        </section>
+        <section class="d-none d-md-block d-lg-none bg-cincolor">
+            <div class="container">
+                <div class="row justify-content-center py-3">
+                    <div class="anuncios anuncio728x90">
+                        <p>728 x 90</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="d-none d-lg-block bg-cincolor">
+            <div class="container">
+                <div class="row justify-content-center py-3">
+                    <div class="anuncios anuncio970x90">
+                        <p>970 x 90</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+<?php endif;?>

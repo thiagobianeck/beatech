@@ -20,6 +20,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import url('assets/css/templates/beatech.css');
 @import url('assets/css/templates/mailchimp.css');
 
+
+/*@media (min-width: 576px) {}*/
+/*@media (min-width: 768px) {}*/
+/*@media (min-width: 992px) {}*/
+/*@media (min-width: 1200px) {}*/
+
 :root {
     --pricolor1: #F6CD00;
     --pricolor2: #00ABE6;
@@ -83,7 +89,7 @@ a:hover {
 
 .hero-principal {
     height: 400px;
-    background-image: url(../../assets/img/bghero.jpg);
+    background-image: url(assets/img/bghero.jpg);
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -247,10 +253,6 @@ a:hover {
 
 /** CSS de Página **/
 
-@media (min-width: 576px) {}
-@media (min-width: 768px) {}
-@media (min-width: 992px) {}
-@media (min-width: 1200px) {}
 
 @media (min-width: 768px) {
     .pagina main {
@@ -315,4 +317,30 @@ div.post-thumbnail img:hover{
     transform: scale(1.1) rotate(1deg);
 
 }
+
+/** BLOG **/
+
+.entry-content .entry-img {
+    width: 100%;
+}
+
+.entry-content .entry-summary {
+    width: 100%;
+}
+
+
+@media (min-width: 992px) {
+    .entry-content .entry-img {
+        width: 320px!important;
+    }
+
+    .entry-content .entry-summary {
+        width: calc(100% - 320px);
+    }
+}
+
+/*@media (min-width: 576px) {}*/
+/*@media (min-width: 768px) {}*/
+/*@media (min-width: 992px) {}*/
+/*@media (min-width: 1200px) {}*/
 

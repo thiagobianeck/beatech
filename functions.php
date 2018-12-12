@@ -29,6 +29,7 @@ if ( ! function_exists( 'beatech_setup' ) ) :
 
         add_image_size('hero-pg', 1200, 300, true);
         add_image_size('post-img', 800 );
+        add_image_size('post-img-thumb', 500 );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -169,8 +170,6 @@ function mailchimp() { ?>
     </script>
 
 <?php }
-
-
 /**
  * Implement the Custom Header feature.
  */

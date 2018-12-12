@@ -8,15 +8,15 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php beatech_posted_on(); beatech_posted_by(); ?>
+			<div class="entry-meta border-bottom pb-2">
+				<?php beatech_posted_on(); echo " | "; beatech_posted_by(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php beatech_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content mb-4 border-bottom">
 		<?php
 		the_content( sprintf(
 			wp_kses(
