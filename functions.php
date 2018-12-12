@@ -128,10 +128,11 @@ function beatech_scripts() {
 	wp_enqueue_style( 'bootstrap4-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '4.1.3');
 
 //	wp_enqueue_style( 'fontawesome-css', get_template_directory_uri() . '/assets/css/all.min.css', array(), '5.0.0');
-	wp_enqueue_style( 'fontawesome-solid', 'https://use.fontawesome.com/releases/v5.6.1/css/solid.css', array(), '5.6.1');
-	wp_enqueue_style( 'fontawesome-regular', 'https://use.fontawesome.com/releases/v5.6.1/css/regular.css', array(), '5.6.1');
-	wp_enqueue_style( 'fontawesome-brands', 'https://use.fontawesome.com/releases/v5.6.1/css/brands.css', array(), '5.6.1');
-	wp_enqueue_style( 'fontawesome-fontawesome', 'https://use.fontawesome.com/releases/v5.6.1/css/fontawesome.css', array(), '5.6.1');
+	wp_enqueue_style( 'fontawesome-all', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1');
+//	wp_enqueue_style( 'fontawesome-solid', 'https://use.fontawesome.com/releases/v5.6.1/css/solid.css', array(), '5.6.1');
+//	wp_enqueue_style( 'fontawesome-regular', 'https://use.fontawesome.com/releases/v5.6.1/css/regular.css', array(), '5.6.1');
+//	wp_enqueue_style( 'fontawesome-brands', 'https://use.fontawesome.com/releases/v5.6.1/css/brands.css', array(), '5.6.1');
+//	wp_enqueue_style( 'fontawesome-fontawesome', 'https://use.fontawesome.com/releases/v5.6.1/css/fontawesome.css', array(), '5.6.1');
 
 
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Amaranth:400,700|Anton|Josefin+Sans:300,400,600,700|Montserrat:200,300,400,500,600,700,800,900|Raleway:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900', array(), '1.0.0');
