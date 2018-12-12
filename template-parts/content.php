@@ -1,14 +1,3 @@
-<?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package beatech
- */
-
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -18,13 +7,9 @@
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
-		if ( 'post' === get_post_type() ) :
-			?>
+		if ( 'post' === get_post_type() ) : ?>
 			<div class="entry-meta">
-				<?php
-				beatech_posted_on();
-				beatech_posted_by();
-				?>
+				<?php beatech_posted_on(); beatech_posted_by(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

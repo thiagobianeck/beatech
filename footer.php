@@ -1,10 +1,11 @@
 <div class="top-footer bg-cincolor2">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 col-lg-7">
+            <div class="col-md-8 col-lg-8">
 
+                <?php echo do_shortcode('[mc4wp_form id="21"]')?>
             </div>
-            <div class="col-md-6 col-lg-5 my-2 my-md-0">
+            <div class="col-md-4 col-lg-4 my-2 my-md-0">
                 <div class="social-icons text-white text-center text-md-right">
                     <a href="https://www.facebook.com/beatech.technology" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-facebook"></a>
                     <a href="https://www.linkedin.com/company/beatechtechnology/" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-linkedin"></a>

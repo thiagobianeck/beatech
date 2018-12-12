@@ -28,6 +28,7 @@ if ( ! function_exists( 'beatech_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 
         add_image_size('hero-pg', 1200, 300, true);
+        add_image_size('post-img', 800 );
 
 		/*
 		 * Let WordPress manage the document title.

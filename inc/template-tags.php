@@ -13,9 +13,9 @@ if ( ! function_exists( 'beatech_posted_on' ) ) :
 	 */
 	function beatech_posted_on() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-		}
+//		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+//			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>, Atualizado em <time class="updated" datetime="%3$s">%4$s</time>';
+//		}
 
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( DATE_W3C ) ),
@@ -123,11 +123,10 @@ if ( ! function_exists( 'beatech_post_thumbnail' ) ) :
 			return;
 		}
 
-		if ( is_singular() ) :
-			?>
+		if ( is_singular() ) :?>
 
 			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('post-img', array( 'class' => 'rounded img-fluid')); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -135,7 +134,8 @@ if ( ! function_exists( 'beatech_post_thumbnail' ) ) :
 		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 			<?php
 			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
+				'class' => 'rounded img-fluid',
+			        'alt' => the_title_attribute( array(
 					'echo' => false,
 				) ),
 			) );

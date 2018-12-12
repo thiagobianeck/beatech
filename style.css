@@ -18,6 +18,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 
 @import url('assets/css/templates/beatech.css');
+@import url('assets/css/templates/mailchimp.css');
 
 :root {
     --pricolor1: #F6CD00;
@@ -56,6 +57,14 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 .redborder{
     border: 1px solid red;
+}
+
+a {
+    color: var(--seccolor2);
+}
+
+a:hover {
+    color: var(--pricolor3);
 }
 
 .navbar-top-beatech {}
@@ -132,11 +141,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /** FOOTER **/
 
 .top-footer {
-    height: 120px;
+    min-height: 120px;
 }
 
 .top-footer .row{
-    height: 120px;
+    min-height: 120px;
 }
 
 .sobre-logo img{
@@ -285,5 +294,25 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     z-index: 2;
 }
 
+/** SIngle post **/
 
+div.post-thumbnail {
+    position: relative;
+    overflow: hidden;
+    margin: 1rem 0;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+div.post-thumbnail img{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+div.post-thumbnail img:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1) rotate(1deg);
+
+}
 

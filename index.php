@@ -20,7 +20,6 @@
         <div class="container">
             <div class="row d-md-flex">
                 <main class="px-4 pl-md-0">
-                    <article>
                         <?php get_template_part( 'template-parts/content', 'page' );
 
                             // If comments are open or we have at least one comment, load up the comment template.
@@ -30,7 +29,6 @@
 
                         endwhile; wp_reset_postdata();?>
 
-                    </article>
                 </main>
                 <?php get_sidebar()?>
             </div>
