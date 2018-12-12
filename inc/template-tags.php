@@ -58,23 +58,27 @@ if ( ! function_exists( 'beatech_entry_footer' ) ) :
 	function beatech_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
+
+		    echo '<div class="row py-2 mx-1 border-top">';
+		    echo '<div class="col-lg-6 text-center text-lg-left">';
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'beatech' ) );
+			$categories_list = get_the_category_list( '</span> <span class="badge badge-pill badge-light">');
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'beatech' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				echo '<div class="">Categorias: <span class="badge badge-pill badge-light">' . $categories_list . '</span></div>';
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'beatech' ) );
+			$tags_list = get_the_tag_list( '<span><span class="badge badge-pill badge-warning">','</span> <span class="badge badge-pill badge-warning">','</span></span>');
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'beatech' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links">' . esc_html__( 'Tags: %1$s', 'beatech' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
+            echo '</div>';
 		}
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
+			echo '<div class="col-lg-6 text-center text-lg-right"><span class="comments-link"><i class="far fa-edit mr-2"></i>';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
@@ -89,8 +93,9 @@ if ( ! function_exists( 'beatech_entry_footer' ) ) :
 					get_the_title()
 				)
 			);
-			echo '</span>';
+			echo '</span></div>';
 		}
+		echo '</div>';
 
 		edit_post_link(
 			sprintf(
@@ -105,7 +110,7 @@ if ( ! function_exists( 'beatech_entry_footer' ) ) :
 				),
 				get_the_title()
 			),
-			'<div class="my-4"><span class="btn-round-outl btn-round-outl-pricolor1">',
+			'<div class="my-4"><span class="btn-round-outl btn-round-outl-pricolor1"><i class="far fa-edit mr-1 text-cincolor"></i> ',
 			'</span></div>'
 		);
 	}
