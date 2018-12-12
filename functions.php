@@ -141,6 +141,23 @@ function beatech_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'beatech_scripts' );
 
+
+add_action('wp_head', 'google_analytics', 20);
+
+function google_analytics() { ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130869004-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130869004-1');
+    </script>
+
+<?php }
+
+
 /**
  * Implement the Custom Header feature.
  */

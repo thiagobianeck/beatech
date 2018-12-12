@@ -6,14 +6,14 @@
             </div>
             <div class="col-md-6 col-lg-5 my-2 my-md-0">
                 <div class="social-icons text-white text-center text-md-right">
-                    <a href="https://www.facebook.com/beatech.technology" class="btn-social-simpl-bgdrk btn-social-simpl-facebook"></a>
-<!--                    <a href="#" class="btn-social-simpl-bgdrk btn-social-simpl-linkedin"></a>-->
-<!--                    <a href="#" class="btn-social-simpl-bgdrk btn-social-simpl-twitter"></a>-->
-<!--                    <a href="#" class="btn-social-simpl-bgdrk btn-social-simpl-pinterest"></a>-->
-<!--                    <a href="#" class="btn-social-simpl-bgdrk btn-social-simpl-github"></a>-->
-<!--                    <a href="#" class="btn-social-simpl-bgdrk btn-social-simpl-instagram"></a>-->
-<!--                    <a href="#" class="btn-social-simpl-bgdrk btn-social-simpl-youtube"></a>-->
-<!--                    <a href="#" class="btn-social-simpl-bgdrk btn-social-simpl-whatsapp"></a>-->
+                    <a href="https://www.facebook.com/beatech.technology" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-facebook"></a>
+<!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-linkedin"></a>-->
+<!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-twitter"></a>-->
+<!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-pinterest"></a>-->
+<!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-github"></a>-->
+<!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-instagram"></a>-->
+<!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-youtube"></a>-->
+<!--                    <a href="#" target="_blank" class="btn-social-simpl-bgdrk btn-social-simpl-whatsapp"></a>-->
                 </div>
             </div>
 
