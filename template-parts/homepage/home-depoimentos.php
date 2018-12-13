@@ -12,7 +12,7 @@
             <div class="testimonial4_slide">
                 <img src="<?php echo get_template_directory_uri()?>/assets/img/depoimentos/emanoel.png" class="rounded-circle img-fluid" />
                 <p>"Trabalhar com a Beatech é ter a certeza de que ela sempre irá trazer para o seu projeto as soluções mais funcionais possíveis."</p>
-                <h4>Emanoel Padia</h4>
+                <h4>Emanuel Padia</h4>
             </div>
         </div>
 <!--        <div class="carousel-item">-->
